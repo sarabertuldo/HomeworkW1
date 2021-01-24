@@ -5,28 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hammock District | Contact</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Cabin&family=Noto+Sans&display=swap" rel="stylesheet">
+
     <style>
     nav {
         display: flex;
         flex-wrap: wrap;
       }
 
+      .text {
+        font-family: "Noto Sans JP", sans-serif;
+      }
+
+      .text2 {
+        font-family: 'Bodoni Moda', serif;
+      }
+
+      .text3 {
+        font-family: 'Cabin', sans-serif;
+      }
+
       .link {
-        margin: 2px;
-        flex-basis: calc(33% - 1px);
+        flex-grow: 1;
         text-align: center;
         color: white;
         background-color: rgb(1, 155, 175);
         text-decoration: none;
-      }
-
-      .text {
-        font-family: "Lato", sans-serif;
-        font-family: "Noto Sans JP", sans-serif;
       }
 
       .link:hover {
@@ -34,7 +39,8 @@
       }
 
       .active {
-        background-color: rgb(149, 149, 201);
+        background-color: rgb(103, 103, 214);
+        opacity: 90%;
       }
 
       header {
@@ -50,9 +56,34 @@
         text-align: center;
       }
 
+      .contact-box {
+          padding: 10px;
+          margin: auto;
+          width: 65%;
+          text-align: center;
+      }
+
       .container {
         display: flex;
+
       }
+
+      .name-input {
+          width: 100%;
+          display: flex;
+      }
+
+      .comment-box {
+          width: 100%;
+          height: 150px;
+          display: flex;
+      }
+
+      .name-input input {
+          flex-grow: 1;
+      }
+
+
     </style>
   </head>
   <body>
@@ -72,45 +103,46 @@
       <a class="link active" href="products.html">Products</a>
       <a class="link" href="contact.html">Contact</a>
     </nav>
+</div>
 
-    <p class="center container">
-      <label>Name:</label>
-      <input type="text" placeholder="Hank Scorpio" id="name" />
-    </p>
+<div class="contact-box text">
 
-    <p class="center">
-      <label>E-mail Address:</label>
-      <input type="text" placeholder="scorpio@cypresscreek.com" id="email" />
-    </p>
 
-    <p class="center">
-      <label>Occupation:</label>
-      <input type="text" placeholder="Inanimate carbon rod" id="city" />
-    </p>
+    <div class="center name-input">
+        <label>Name:</label>
+        <input type="text" placeholder="Hank Scorpio" id="name" />
+    </div>
+      
+  
+    <div class="center name-input">
+        <label>E-mail Address:</label>
+        <input type="text" placeholder="scorpio@globex.com" id="email" />
+    </div>
+  
+    <div class="center name-input">
+        <label>Occupation:</label>
+        <input type="text" placeholder="Inanimate carbon rod" id="city" />
+    </div>
 
-    <p class="center">
-      <label>Commments:</label>
-      <textarea
-        form="form id"
-        placeholder="It was the best of times, it was the blurst of times."
-      ></textarea>
-    </p>
+      <div class="center comment-box">
+        <label>Commments:</label>
+        <textarea class="comment-box" form="form id"
+          placeholder="It was the best of times, it was the blurst of times."></textarea>
+      </div>
+  
+      <div class="center">
+    <label>What's your least favorite country?</label>
+    <input type="radio" id="country" name="country" checked="checked" value="italy">
+    <label for="choice1">Italy</label>
 
-    <p class="center">
-      <label>What's your least favorite country?</label>
-      <br /><br />
-      <input type="radio" id="country" name="country" checked="checked" value="italy">
-      <label for="choice1">Italy</label>
+    <input type="radio" id="country" name="country" value="france">
+    <label for="choice2">France</label>
 
-      <input type="radio" id="country" name="country" value="france" />
-      <label for="choice2">France</label>
-
-      <input type="radio" id="country" name="country" value="neither" />
-      <label for="choice3">Neither</label>
-    </p>
-
-    <input type="submit" value="submit" align-right />
-</nav>
+    <input type="radio" id="country" name="country" value="neither">
+    <label for="choice3">Neither</label>
+  
+      <input type="submit" value="Submit"></a>
+    </div>
 </div>
 
     <footer class="text">

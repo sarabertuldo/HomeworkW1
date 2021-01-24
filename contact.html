@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hammock District | Contact</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .link {
+        margin: 2px;
+        flex-basis: calc(33% - 1px);
+        text-align: center;
+        color: white;
+        background-color: rgb(1, 155, 175);
+        text-decoration: none;
+      }
+
+      .text {
+        font-family: "Lato", sans-serif;
+        font-family: "Noto Sans JP", sans-serif;
+      }
+
+      .link:hover {
+        background-color: rgb(110, 110, 101);
+      }
+
+      .active {
+        background-color: rgb(149, 149, 201);
+      }
+
+      header {
+        background-color: rgb(103, 103, 214);
+        color: white;
+        font-size: 75px;
+      }
+
+      footer {
+        background: rgb(103, 103, 214);
+        color: white;
+        font-size: 15px;
+        text-align: center;
+      }
+
+      .container {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="text">
+      <img
+        src="https://tstoaddicts.files.wordpress.com/2017/04/hammock_district.png?w=584"
+        alt="Hammock District"
+        title="Hammock District"
+        height="106"
+        width="156"
+      />
+      Hammock District
+    </header>
+    <div class="text">
+        <nav>
+      <a class="link" href="/index.html">Home</a>
+      <a class="link active" href="/products.html">Products</a>
+      <a class="link" href="/contact.html">Contact</a>
+    </nav>
+
+    <p class="center container">
+      <label>Name:</label>
+      <input type="text" placeholder="Hank Scorpio" id="name" />
+    </p>
+
+    <p class="center">
+      <label>E-mail Address:</label>
+      <input type="text" placeholder="scorpio@cypresscreek.com" id="email" />
+    </p>
+
+    <p class="center">
+      <label>Occupation:</label>
+      <input type="text" placeholder="Inanimate carbon rod" id="city" />
+    </p>
+
+    <p class="center">
+      <label>Commments:</label>
+      <textarea
+        form="form id"
+        placeholder="It was the best of times, it was the blurst of times."
+      ></textarea>
+    </p>
+
+    <p class="center">
+      <label>What's your least favorite country?</label>
+      <br /><br />
+      <input type="radio" id="country" name="country" checked="checked" value="italy">
+      <label for="choice1">Italy</label>
+
+      <input type="radio" id="country" name="country" value="france" />
+      <label for="choice2">France</label>
+
+      <input type="radio" id="country" name="country" value="neither" />
+      <label for="choice3">Neither</label>
+    </p>
+
+    <input type="submit" value="submit" align-right />
+</nav>
+</div>
+
+    <footer class="text">
+      The Hammock Complex down on 3rd - Located in Cypress Creek Promenade Est.
+      1996
+    </footer>
+  </body>
+</html>

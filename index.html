@@ -1,11 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hammock District | The Hammock Complex on 3rd</title>
+    <!--<link href="styles.css" rel="stylesheet" type="text/css" />-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .link {
+        margin: 2px;
+        flex-basis: calc(33% - 1px);
+        text-align: center;
+        color: white;
+        background-color: rgb(1, 155, 175);
+        text-decoration: none;
+      }
+
+      .text {
+        font-family: "Lato", sans-serif;
+        font-family: "Noto Sans JP", sans-serif;
+      }
+
+      .link:hover {
+        background-color: rgb(110, 110, 101);
+      }
+
+      .active {
+        background-color: rgb(149, 149, 201);
+      }
+
+      header {
+        background-color: rgb(103, 103, 214);
+        color: white;
+        font-size: 75px;
+      }
+
+      footer {
+        background: rgb(103, 103, 214);
+        color: white;
+        font-size: 15px;
+        text-align: center;
+      }
+
+      .pageContainer {
+        display: flex;
+      }
+
+      .box {
+        display: inline-block;
+        min-width: 350px;
+        min-height: 100px;
+        margin: 3px;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        border: 1px solid black;
+      }
+
+      .box2 {
+        padding: 5px;
+        display: inline-block;
+        width: 200px;
+        min-height: 25px;
+        margin: 3px;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="text">
+      <img
+        src="https://tstoaddicts.files.wordpress.com/2017/04/hammock_district.png?w=584"
+        alt="Hammock District"
+        title="Hammock District"
+        height="106"
+        width="156"
+      />
+      Hammock District
+    </header>
+    <nav class="text">
+      <a class="link active" href="/index.html">Home</a>
+      <a class="link" href="/products.html">Products</a>
+      <a class="link" href="/contact.html">Contact</a>
+    </nav>
+
+    <div class="pageContainer text">
+      <main>
+        <div class="box">The Hammock Hut</div>
+        <div class="box">Hammocks 'R Us'</div>
+        <div class="box">Put Your Butt There</div>
+        <div class="box">Swing Low, Sweet Chariot</div>
+        <div class="box">Mary-Anne's Hammocks</div>
+        <div class="box">Sunnydaze</div>
+        <div class="box">Hang In There, Baby</div>
+        <div class="box">Swingerz</div>
+        <div class="box">Frankie Says Relax</div>
+        <div class="box">Hang Tight</div>
+      </main>
+
+      <article>
+        <div class="box2">
+          “On your way out, if you wanna kill somebody, it would help me a lot.”
+          ―Hank Scorpio
+        </div>
+        <div class="box2">
+          "We have roots here, Homer. We have friends and family and library
+          cards... Bart's lawyer is here!" -Marge Simpson
+        </div>
+        <div class="box2">
+          "What's wrong with this country!? Can't a man walk down the street
+          without being offered a job?" -Waylon Smithers
+        </div>
+        <div class="box2">
+          "Did you notice how the people weren't shoving or knocking each other
+          down? I've never been to a place like that before..." -Lisa Simpson
+        </div>
+        <div class="box2">
+          "I fell off the jungle gym and when I woke up I was in here." -Dot
+        </div>
+      </article>
+    </div>
+
+    <footer class="text">
+      The Hammock Complex down on 3rd - Located in Cypress Creek Promenade Est.
+      1996
+    </footer>
+  </body>
 </html>

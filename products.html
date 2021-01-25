@@ -5,101 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hammock District | The Hammock Complex on 3rd</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Cabin&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Cabin&family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
 
-    <style>
-      nav {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      .text {
-        font-family: "Noto Sans JP", sans-serif;
-      }
-
-      .text2 {
-        font-family: 'Bodoni Moda', serif;
-      }
-
-      .text3 {
-        font-family: 'Cabin', sans-serif;
-      }
-
-      .link {
-        flex-grow: 1;
-        text-align: center;
-        color: white;
-        background-color: rgb(1, 155, 175);
-        text-decoration: none;
-      }
-
-      .link:hover {
-        background-color: rgb(110, 110, 101);
-      }
-
-      .active {
-        background-color: rgb(103, 103, 214);
-        opacity: 90%;
-      }
-
-      header {
-        background-color: rgb(103, 103, 214);
-        color: white;
-        font-size: 75px;
-      }
-
-      footer {
-        background: rgb(103, 103, 214);
-        color: white;
-        font-size: 15px;
-        text-align: center;
-      }
-
-      .pageContainer {
-        display: flex;
-      }
-
-      .box {
-        padding: 5px;
-        display: inline-block;
-        width: 150px;
-        min-height: 25px;
-        margin: 3px;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        border: 1px solid black;
-        text-align: center;
-      }
-
-      .box2 {
-        display: inline-block;
-        min-width: 600px;
-        min-height: 100px;
-        margin: 3px;
-        flex-basis: auto;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        border: 1px solid black;
-      }
-
-      .box2-image {
-        display: block;
-        float: left;
-      }
-
-      .article {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 10px 0px;
-        border: 1px solid black;
-      }
-
-      p {
-        flex-basis: 10px;
-        flex-grow: 1;
-        margin: 0px 10px;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="text">
@@ -119,26 +30,36 @@
     </nav>
 
     <div class="pageContainer">
-      <main name="top" class="text3">
-        <div class="box"><a href="#ropehammock">Rope Hammock</a></div>
-        <div class="box"><a href="#campinghammock">Camping Hammock</a></div>
-        <div class="box"><a href="#quiltedhammock">Quilted Hammock</a></div>
-        <div class="box"><a href="#poolsidehammock">Poolside Hammock</a></div>
-        <div class="box">
+      <main name="top" class="text3 aside">
+        <div class="products-box"><a href="#ropehammock">Rope Hammock</a></div>
+        <div class="products-box">
+          <a href="#campinghammock">Camping Hammock</a>
+        </div>
+        <div class="products-box">
+          <a href="#quiltedhammock">Quilted Hammock</a>
+        </div>
+        <div class="products-box">
+          <a href="#poolsidehammock">Poolside Hammock</a>
+        </div>
+        <div class="products-box">
           <a href="#hammockwithstand">Hammock with Stand</a>
         </div>
-        <div class="box"><a href="#sittinghammock">Sitting Hammock</a></div>
-        <div class="box"><a href="#portablehammock">Portable Hammock</a></div>
-        <div class="box"><a href="#treehammock">Tree Hammock</a></div>
-        <div class="box"><a href="#pillows">Pillows</a></div>
-        <div class="box">
+        <div class="products-box">
+          <a href="#sittinghammock">Sitting Hammock</a>
+        </div>
+        <div class="products-box">
+          <a href="#portablehammock">Portable Hammock</a>
+        </div>
+        <div class="products-box"><a href="#treehammock">Tree Hammock</a></div>
+        <div class="products-box"><a href="#pillows">Pillows</a></div>
+        <div class="products-box">
           <a href="#tomlandryshat">Tom Landry's hat</a>
         </div>
       </main>
 
-      <article text="text2">
-        <div class="box2" id="ropehammock">
-          <div class="box2-image">
+      <article class="text2">
+        <div class="products-box2" id="ropehammock">
+          <div class="box2-image scale">
             <img
               src="https://pawleysislandhammocks.com/gallery/12oc-pawleys-island-single-cotton-rope-studio-xx.jpg"
               height="200"
@@ -146,20 +67,20 @@
               alt="Rope Hammock Picture"
               title="Rope Hammock"
             />
-          </div><div>
-          <a id="ropehammock"
-            ><p>
+          </div>
+          <div>
+            <a id="ropehammock">
               Rope Hammock - Typically, rope hammocks are made of either cotton
               or polyester ropes, and in order to keep the user from flipping
               too much, it includes a spreader bar at either end to help it keep
               its flat shape, rather than bunching up. Trust me, you don’t want
               a rope hammock without a spreader bar.
-            </p></a
-          ></div>
+            </a>
+          </div>
         </div>
 
-        <div class="box2" id="campinghammock">
-          <div class="box2-image">
+        <div class="products-box2" id="campinghammock">
+          <div class="box2-image scale">
             <img
               src="https://i5.walmartimages.com/asr/54d861ca-21ce-404a-b3de-4c88879e4afe_1.b60a461072dab8d9afa68a9568840cc2.jpeg"
               height="200"
@@ -168,21 +89,19 @@
               title="Camping Hammock"
             />
           </div>
-          <a id="campinghammock"
-            ><p>
-              Camping Hammock - The quilted hammock is composed of two fabric
-              layers stuffed with some sort of soft filling. Since it’s all
-              cloth, these aren’t the best hammocks to use outdoors but are very
-              comfortable. In fact, this might make for a good bedroom hammock,
-              if that’s something you’re interested in. If you really want to go
-              all in, a quilted hammock might even be your best bet for an
-              indoor hammock bed.
-            </p></a
-          ><a href="#top">Go to Top</a>
+          <a id="campinghammock">
+            Camping Hammock - The quilted hammock is composed of two fabric
+            layers stuffed with some sort of soft filling. Since it’s all cloth,
+            these aren’t the best hammocks to use outdoors but are very
+            comfortable. In fact, this might make for a good bedroom hammock, if
+            that’s something you’re interested in. If you really want to go all
+            in, a quilted hammock might even be your best bet for an indoor
+            hammock bed.
+          </a>
         </div>
 
-        <div class="box2" id="quiltedhammock">
-          <div class="box2-image">
+        <div class="products-box2" id="quiltedhammock">
+          <div class="box2-image scale">
             <img
               src="https://dfohome.com/gallery/q7016-dfohome-quilted-hammock-peacock-zinger-lifestyle-xx.jpg"
               height="200"
@@ -193,17 +112,17 @@
           </div>
 
           <a id="quiltedhammock"
-            ><p>Quilted Hammock - Quilted hammocks are exactly what they sounds
+            >Quilted Hammock - Quilted hammocks are exactly what they sounds
             like: hammocks with a solid, fabric bottom that's sewn together in
             the style of a quilt. That is, there are sections sewn together with
             tufted, plush filling to keep you comfy.
-          </a></p>
+          </a>
 
           <a href="#top">Go to Top</a>
         </div>
 
-        <div class="box2" id="poolsidehammock">
-          <div class="box2-image">
+        <div class="products-box2" id="poolsidehammock">
+          <div class="box2-image scale">
             <img
               src="https://www.myhammock.com/wp-content/uploads/2018/11/Large-Pool-Side-Hammock-Framework-Copper-9f80fc32-b004-4f19-a6d1-0c0edaf6c9b8.jpg"
               height="200"
@@ -212,7 +131,7 @@
               title="Poolside Hammock"
             />
           </div>
-          <a id="poolsidehammock"><p>
+          <a id="poolsidehammock">
             Poolside Hammock - If hopping onto a hammock after climbing out of
             the pool is in the cards for you, you should greatly consider
             getting a poolside hammock. Though it doesn’t have to be placed
@@ -222,12 +141,12 @@
             growth of mildew. Plus, it’s a great way to add some visual interest
             to your backyard pool area, much like adding a nice decorative rug
             to an interior space.
-          </a></p>
+          </a>
           <a href="#top">Go to Top</a>
         </div>
 
-        <div class="box2" id="hammockwithstand">
-          <div class="box2-image">
+        <div class="products-box2" id="hammockwithstand">
+          <div class="box2-image scale">
             <img
               src="https://secure.img1-fg.wfcdn.com/im/27447941/compr-r85/7116/71166640/bellair-adjust-to-fit-double-tree-hammock-with-stand.jpg"
               height="200"
@@ -237,7 +156,7 @@
             />
           </div>
           <a id="hammockwithstand"
-            ><p>Hammock with Stand - As we know there are many kinds of hammocks
+            >Hammock with Stand - As we know there are many kinds of hammocks
             available on the market, such as camping hammocks, hanging chairs
             and porch swings. If you have a traditional hammock it is sure you
             have to find two trees or posts in order to use it. They need
@@ -245,12 +164,12 @@
             nature which are close enough to each other to set up your hammock.
             It is also true for your backyard but if you choose a hammock with
             stand you do not need to wonder about the distance between trees
-            again.</p></a
+            again. </a
           ><a href="#top">Go to Top</a>
         </div>
 
-        <div class="box2" id="sittinghammock">
-          <div class="box2-image">
+        <div class="products-box2" id="sittinghammock">
+          <div class="box2-image scale">
             <img
               src="https://pyxis.nymag.com/v1/imgs/d35/199/bddfa1a05a3b09600a2fbc0fad50c177d6-14-hammock-chair.rsquare.w1200.jpg"
               height="200"
@@ -259,8 +178,8 @@
               title="Sitting Hammock"
             />
           </div>
-          <a id="sittinghammock"
-            ><p>Sitting Hammock - “Where do I start, as I float in this cloud of
+          <a id="sittinghammock">
+            Sitting Hammock - “Where do I start, as I float in this cloud of
             comfort relaxing, listening to the sounds of nature around me?” asks
             one reviewer, one of many who find themselves melting into the
             comfort of this hammock chair. “I spend a little bit of time in it
@@ -271,17 +190,12 @@
             swinging on it,” but it holds up adults, too. One explains, “I am
             near the top end of weight limit on the swing, and there have been
             no issues.” This is also suitable for either indoor or outdoor use,
-            which is especially nice when you can’t leave the house. “It gave us
-            the opportunity of being on vacation on our own apartment,” one
-            reviewer says. However, if you are using it outdoors, one reviewer
-            suggests that “you keep it hung on a carabiner for easy takedown for
-            when it rains. I bring mine in every time though, just to make sure
-            it will last as long as possible.”</p></a
+            which is especially nice when you can’t leave the house. </a
           ><a href="#top">Go to Top</a>
         </div>
 
-        <div class="box2" id="portablehammock">
-          <div class="box2-image">
+        <div class="products-box2" id="portablehammock">
+          <div class="box2-image scale">
             <img
               src="https://i5.walmartimages.com/asr/40dfbdd3-cbfb-4a8b-9848-d4892f0c6065.466659bb458e51278663c3a306e124e0.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff"
               height="200"
@@ -290,8 +204,8 @@
               title="Portable Hammock"
             />
           </div>
-          <a id="portablehammock"
-            ><p>Portable Hammock - A quintessential prop strung between two bending
+          <a id="portablehammock">
+            Portable Hammock - A quintessential prop strung between two bending
             palms in pirate movies since the earliest days of cinema, hammocks
             surely don’t have a role in modern travel do they? Actually, they
             do, with modern portable versions of the Caribbean invention rapidly
@@ -301,12 +215,12 @@
             not suffer the main problem with tents – lumpy, uneven, and sloping
             ground, giving users a better night’s sleep. But portable hammocks
             are also lightweight and can be used wherever you can find a couple
-            of trees or other supports – which is nearly everywhere!</p></a
+            of trees or other supports – which is nearly everywhere! </a
           ><a href="#top">Go to Top</a>
         </div>
 
-        <div class="box2" id="treehammock">
-          <div class="box2-image">
+        <div class="products-box2" id="treehammock">
+          <div class="box2-image scale">
             <img
               src="https://i5.walmartimages.com/asr/e6140118-33e8-447a-bd47-d11c277c67f4.8d83d79519b3f2b000d1e9abbb9b26bd.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff"
               height="200"
@@ -315,17 +229,17 @@
               title="Tree Hammock"
             />
           </div>
-          <a id="treehammock"><p>
+          <a id="treehammock">
             Tree Hammock - To easily hang and remove a portable hammock outdoors
             for camping or in a yard, use tree straps or two lengths of rope for
             each end of the hammock. Choose two sturdy trees about 14 to 16-feet
             apart. Tie on the tree straps according to the instructions and
-            attach the hammock's ends to the tree straps.</p></a
+            attach the hammock's ends to the tree straps. </a
           ><a href="#top">Go to Top</a>
         </div>
 
-        <div class="box2" id="pillows">
-          <div class="box2-image">
+        <div class="products-box2" id="pillows">
+          <div class="box2-image scale">
             <img
               src="https://images.crateandbarrel.com/is/image/Crate/BrennerPillowGroupFSSF20_1x1/$web_pdp_main_carousel_zoom_med$/201009163310/brenner-20-velvet-pillows.jpg"
               height="200"
@@ -334,7 +248,7 @@
               title="Pillows"
             />
           </div>
-          <a id="pillows"><p>
+          <a id="pillows">
             Pillows - A support of the body at rest for comfort, therapy, or
             decoration. Pillows are used by many species, including humans. Some
             types of pillows include throw pillows, body pillows, decorative
@@ -343,12 +257,12 @@
             designed to support the body when lying down or sitting. There are
             also pillows that consider human body shape for increased comfort
             during sleep. Decorative pillows used on people, couches or chairs
-            are sometimes referred to as cushions.</p></a
+            are sometimes referred to as cushions. </a
           ><a href="#top">Go to Top</a>
         </div>
 
-        <div class="box2" id="tomlandryshat">
-          <div class="box2-image">
+        <div class="products-box2" id="tomlandryshat">
+          <div class="box2-image scale">
             <img
               src="https://i.ebayimg.com/images/g/zikAAOSwu3dgB3hE/s-l640.jpg"
               height="200"
@@ -357,11 +271,11 @@
               title="Tom Landry's Hat"
             />
           </div>
-          <a id="tomlandryshat"><p>
+          <a id="tomlandryshat">
             Tom Landry's hat - To Berman's Dry Cleaning, Best Wishes autographed
             by Tom Landry. Also known as a "Decision Hat." Only management-type
             guys with big salaries like me can afford things like that. Guys
-            like me? I'm a guy like me!</p></a
+            like me? I'm a guy like me! </a
           ><a href="#top">Go to Top</a>
         </div>
       </article>
@@ -369,7 +283,11 @@
 
     <footer class="text">
       The Hammock Complex down on 3rd - Located in Cypress Creek Promenade Est.
-      1996
+      1996<img
+        src="https://static.wikia.nocookie.net/simpsons/images/c/c0/Hank_Scorpio_Tapped_Out.png/revision/latest/top-crop/width/360/height/360?cb=20150730035717"
+        height="75"
+        width="79"
+      />
     </footer>
   </body>
 </html>

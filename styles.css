@@ -34,6 +34,13 @@ nav {
   opacity: 90%;
 }
 
+.menu-link {
+  flex-grow: 1;
+  text-align: center;
+  background-color: blue;
+  text-decoration: none;
+}
+
 header {
   background-color: rgb(103, 103, 214);
   color: white;
